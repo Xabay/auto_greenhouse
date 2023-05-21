@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".MoistureMenu">
+
+    <TextView
+        android:id="@+id/moiMoistureText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/soil_moisture"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH16"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH8" />
+
+    <SeekBar
+        android:id="@+id/moiMoistureBar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityLiveRegion="none"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH24"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV80"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH16" />
+
+    <TextView
+        android:id="@+id/moiMoistureValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH24"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV80"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH16" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/moiMoistureGraph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH70"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH26"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/moiWaterText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/water_level"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH77"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH72" />
+
+    <ProgressBar
+        android:id="@+id/moiWaterBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH82"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH77" />
+
+    <Button
+        android:id="@+id/moiSaveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/save"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV37"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH84" />
+
+    <Button
+        android:id="@+id/moiCancelButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cancel"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineMoiH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMoiV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMoiV63"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMoiH84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiV37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiV63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiV80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMoiH92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

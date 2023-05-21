@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LightMenu">
+
+
+    <TextView
+        android:id="@+id/ligTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/lighting"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigV18"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH8" />
+
+    <TextView
+        android:id="@+id/ligStartText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/start_time"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH34"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH26" />
+
+    <TimePicker
+        android:id="@+id/ligStartTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH48"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH34" />
+
+    <TextView
+        android:id="@+id/ligEndText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/end_time"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH60"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH52" />
+
+    <TimePicker
+        android:id="@+id/ligEndTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH74"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH60" />
+
+    <Button
+        android:id="@+id/ligSaveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/save"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV37"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigH7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH84" />
+
+    <Button
+        android:id="@+id/ligCancelButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cancel"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLigH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLigV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLigV63"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLigH84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigV63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigV37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08891929" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigV18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLigH92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

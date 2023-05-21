@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "hub.py", line 40, in arduino_serv
+    cur_vals[cur_ind] = int(received)
+IndexError: list assignment index out of range
+Traceback (most recent call last):
+  File "hub.py", line 40, in arduino_serv
+    cur_vals[cur_ind] = int(received)
+IndexError: list assignment index out of range
+Traceback (most recent call last):
+  File "hub.py", line 40, in arduino_serv
+    cur_vals[cur_ind] = int(received)
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "hub.py", line 40, in arduino_serv
+    cur_vals[cur_ind] = int(received)
+ValueError: invalid literal for int() with base 10: ''

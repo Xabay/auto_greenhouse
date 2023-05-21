@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.plaint">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlAInt"
+        android:screenOrientation="sensorPortrait">
+        <activity
+            android:name="com.project.plaint.HumidityMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.ManualMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.FanMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.TempMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.LightMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.NoConnectionScreen"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.MoistureMenu"
+            android:exported="false" />
+        <activity
+            android:name="com.project.plaint.AutoMenu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

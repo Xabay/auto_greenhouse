@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FanMenu">
+
+    <TextView
+        android:id="@+id/fanTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/fan_control"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH18"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH8" />
+
+    <TextView
+        android:id="@+id/fanStartText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/start_time"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH34"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH26" />
+
+    <TimePicker
+        android:id="@+id/fanStartTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH48"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH34" />
+
+    <TextView
+        android:id="@+id/fanEndText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/end_time"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH60"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH52" />
+
+    <TimePicker
+        android:id="@+id/fanEndTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH74"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH60" />
+
+    <Button
+        android:id="@+id/fanSaveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/save"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV37"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH84" />
+
+    <Button
+        android:id="@+id/fanCancelButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cancel"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineFanH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineFanV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineFanV63"
+        app:layout_constraintTop_toTopOf="@+id/guidelineFanH84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanV37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanV63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08891929" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineFanH92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

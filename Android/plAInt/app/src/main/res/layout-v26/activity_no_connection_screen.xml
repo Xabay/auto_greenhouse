@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoConnectionScreen">
+
+    <TextView
+        android:id="@+id/noconDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/nocon_text"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineNoconH42"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineNoconV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineNoconV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineNoconH35" />
+
+    <Button
+        android:id="@+id/noconRetryButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/retry"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineNoconH65"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineNoconV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineNoconV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineNoconH50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconH35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconH42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconH50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineNoconH65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

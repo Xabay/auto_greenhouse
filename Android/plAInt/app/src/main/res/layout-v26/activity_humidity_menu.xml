@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HumidityMenu">
+
+    <TextView
+        android:id="@+id/humHumidityText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/humidity"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH16"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH8" />
+
+    <SeekBar
+        android:id="@+id/humHumidityBar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityLiveRegion="none"
+        android:max="80"
+        android:min="20"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH24"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV80"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH16" />
+
+    <TextView
+        android:id="@+id/humHumidityValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH24"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV80"
+        app:layout_constraintTop_toBottomOf="@+id/humHumidityText" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/humHumidityGraph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH70"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH26"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/humWaterText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/water_level"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH77"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH72" />
+
+    <ProgressBar
+        android:id="@+id/humWaterBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH82"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH77" />
+
+    <Button
+        android:id="@+id/humSaveButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/save"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV37"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH84" />
+
+    <Button
+        android:id="@+id/humCancelButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/cancel"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHumH92"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineHumV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineHumV63"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHumH84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumV63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumV37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumV80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHumH92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

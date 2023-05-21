@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualMenu">
+
+
+    <TextView
+        android:id="@+id/manTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/manual_control"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH10"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH4" />
+
+    <TextView
+        android:id="@+id/manWaterText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:text="@string/water_level"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH21"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH15" />
+
+    <ProgressBar
+        android:id="@+id/manWaterBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH26"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toBottomOf="@+id/manWaterText" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/manMoistureSwitch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/watering"
+        android:textColor="@color/sunlight"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH35"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH29"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/manMoistureBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH40"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH35" />
+
+    <TextView
+        android:id="@+id/manMoistureValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH40"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV75"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH35" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/manHumiditySwitch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/humidity"
+        android:textColor="@color/sunlight"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH49"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH43"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/manHumidityBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH54"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH49" />
+
+    <TextView
+        android:id="@+id/manHumidityValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text=""
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH54"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toEndOf="@+id/manHumidityBar"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH49" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/manTemperatureSwitch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/heating"
+        android:textColor="@color/sunlight"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH63"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH57"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ProgressBar
+        android:id="@+id/manTemperatureBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH68"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV75"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH63" />
+
+    <TextView
+        android:id="@+id/manTemperatureValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH68"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV75"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH63" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/manLightSwitch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/lights"
+        android:textColor="@color/sunlight"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH76"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH70"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/manFanSwitch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/ventillation"
+        android:textColor="@color/sunlight"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH85"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH79"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/manAutoButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/automatic_control"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineManH96"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineManV93"
+        app:layout_constraintStart_toStartOf="@+id/guidelineManV7"
+        app:layout_constraintTop_toTopOf="@+id/guidelineManH88" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManV75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManV93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.29" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.79" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineManH96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+</androidx.constraintlayout.widget.ConstraintLayout>
